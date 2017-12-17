@@ -3,17 +3,110 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="second.css">
+        
+        <!--<link rel="stylesheet" type="text/css" href="second.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" > 
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
     </head>
     <body>
         <header>
             
-            <nav class="navbar navbar-default navbar-static-top">
+            <nav class="navbar navbar-default navbar-toggleable-sm">
+                <div class="container">
+                    <div class="navbar-brand" style="color:black">Tea's webseite</div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navCollapse"  >List</button>
+                    <div class="collapse navbar-collapse navCollapse ">
+                        <ul class=" nav navbar-nav navbar-right">
+                            <li><a href="../webseite/willkommen.html">Willkommen</a></li>
+                            <li><a href="../webseite/kontakt.html">Kontakt</a></li>
+                            <li><a href="../webseite/blog.html">Blog</a></li>
+                            <li><a href="../webseite/autor.html">Autor</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+                   
+        </header>
+        <main>
+            <p>Dropdown example:</p>
+            <div class="container">
+                <div class="dropdown">
+                    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">first</a></li>
+                            <li><a href="#">second</a></li>
+                            <li><a href="#">third</a></li>
+                        </ul>
+                  </div>
+            </div>
+            <br>
+            <p>Checkboxes and radio buttons:</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="checkbox">
+                        <label><input type="checkbox" value="">Option 1</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="radio">
+                         <label><input type="radio" name="optradio">radio opt 1</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="checkbox">
+                        <label><input type="checkbox" value="">Option 2</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="radio">
+                         <label><input type="radio" name="optradio">radio opt 2</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="checkbox">
+                        <label><input type="checkbox" value="">Option 3</label>
+                        </div>
+                    </div>   
+                    <div class="col-xs-6">
+                        <div class="radio">
+                         <label><input type="radio" name="optradio">radio opt 3</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <p>Search and Glyphicons:</p>
+            <input type="text" name="search" placeholder="Search..">
+            <span class="glyphicon glyphicon-search"></span>
+  
+        </main>
+        
+        <footer>
+           <!-- <a href="datenschutz.html" >Datenschutzerklärung</a>
+            <a href="impressum.html" >Impressum</a> -->
+        </footer>
+        
+    </body>
+    
+</html>
+
+            <!--<nav class="navbar navbar-default navbar-expand-sm">
                 <div class="container">
                     <div class="navbar-brand" style="color:black">Tea's webseite</div>
                     <button class="navbar-toggle " data-toggle="collapse" data-target=".navCollapse"  >List</button>
@@ -26,18 +119,20 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
-
-                   
-        </header>
-        <main>
-        </main>
-        
-        <footer>
-            <a href="datenschutz.html" >Datenschutzerklärung</a>
-            <a href="impressum.html" >Impressum</a>
-        </footer>
-        
-    </body>
-    
-</html>
+            </nav>-->
+            
+             <!--<nav class="navbar navbar-toggleable-sm bg-info" >
+                <div class="container">
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+                        Button
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <div class="navbar-nav navbar-right">
+                            <a class="nav-item nav-link active" href="#">Willkommen</a>
+                            <a class="nav-item nav-link" href="#">Kontakt</a>
+                            <a class="nav-item nav-link" href="#">Blog</a>
+                            <a class="nav-item nav-link" href="#">Autor</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>-->
