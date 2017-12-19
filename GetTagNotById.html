@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Heading with a <span>span</span> element.</h1>
+        
+        <p>A paragraph with <span>one</span>, <span>two</span>spans.</p>
+        <!--p has 2 child elements, both spans. -->
+        
+        <div>
+            <h1>h1 in div.</h1>
+        </div>
+        
+        <script>
+            function byTagName (node, tagName){
+                var table = [];
+                tagName = tagName.toUpperCase();
+                
+                function find (node){
+                    var childNodes = node.childNodes;
+                    for (var i = 0; i<childNodes.length ;i++){
+                        var tempChild = childNodes[i];
+                        if (tempChild.nodeType == 1) {
+                            if (tempChild.nodeName == tagName){
+                                /*document.write(tempChild.nodeName);*/
+                                table.push(tempChild);
+                            }
+                            find (tempChild);
+                        }
+                    }
+                }
+                
+                find(node);
+                return table;
+            }
+            
+            document.writeln(byTagName(document.body, "h1").length);
+    
+            document.writeln(byTagName(document.body, "span").length);
+  
+        </script>
+        
+    </body>
+</html>
